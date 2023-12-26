@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="Keywords" content="한국연구재단 웹진, 포커스 인, 신진연구자, 생생 연구현장" />
+        <meta name="Description" content="한국연구재단 운영, 기초과학, 연구개발, 보고서, 지원현황, 문화콘텐츠 서비스 제공" />
+        <meta name="Robots" content="noindex, nofollow" />
+        <meta name="Date" content="2023-12-19+09:00" />
+        <meta http-equiv="Subject" content="NRF 한국연구재단웹진" />
+        <meta http-equiv="Title" content="NRF 한국연구재단웹진" />
+        <meta http-equiv="Author" content="Joy" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="NRF 한국연구재단웹진" />
+        <meta property="og:description" content="한국연구재단 운영, 기초과학, 연구개발, 보고서, 지원현황, 문화콘텐츠 서비스 제공" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <title>NRF 한국연구재단웹진</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/all.css" type="text/css" />
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="css/header.css" type="text/css" />
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="css/footer.css" type="text/css" />
+        <link rel="stylesheet" href="css/sub.css" type="text/css" />
+        <link rel="stylesheet" href="css/setting.css" type="text/css" />
+        <!--JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--SLICK-->
+        <link rel="stylesheet" href="slick/slick-theme.css" type="text/css" />
+        <link rel="stylesheet" href="slick/slick.css" type="text/css" />
+        <script src="slick/slick.min.js"></script>
+        <!--GSAP-->
+        <script src="gsap/gsap.min.js"></script>
+        <script src="gsap/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <div class="wrap_container">
+            <header id="new_hd" class="hd_wrap">
+                <div class="hd_area">
+                    <div class="hd_con">
+                        <div class="hd_left">
+                            <div class="hd_logo">
+                                <a href="https://www.nrf.re.kr/index" title="한국연구재단 홈페이지 새창열기"><h1 class="hiddentag">한국연국재단 홈페이지</h1></a>
+                            </div>
+                            <div data-include-path="../month_webzine_01.html"></div>
+                            <script>
+                                window.addEventListener('load', function () {
+                                    var allElements = document.getElementsByTagName('*');
+                                    Array.prototype.forEach.call(allElements, function (el) {
+                                        var includePath = el.dataset.includePath;
+                                        if (includePath) {
+                                            var xhttp = new XMLHttpRequest();
+                                            xhttp.onreadystatechange = function () {
+                                                if (this.readyState == 4 && this.status == 200) {
+                                                    el.outerHTML = this.responseText;
+
+                                                    // footer.html 로드 후 MONTH_CLICK() 함수 호출
+                                                    MONTH_CLICK();
+                                                    A_CLICK();
+                                                }
+                                            };
+                                            xhttp.open('GET', includePath, true);
+                                            xhttp.send();
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <nav class="hd_nav">
+                            <ul class="hd_navbox">
+                                <li><a href="#sec_01" title="NRF WEBZINE 바로가기">NRF WEBZINE</a></li>
+                                <li><a href="#sec_02" title="2023 대한민국 과학기술대전 바로가기">2023 대한민국 과학기술대전</a></li>
+                                <li><a href="#sec_04" title="2023 산학협력 EXPO 바로가기">2023 산학협력 EXPO</a></li>
+                                <li><a href="#sec_05" title="제7회 세계인문학포럼 바로가기">제7회 세계인문학포럼</a></li>
+                                <li>
+                                    <a href="#sec_05" title="NRF 캠페인 바로가기">NRF 캠페인<span></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mo_logo">
+                            <a href="https://www.nrf.re.kr/index" title="한국연구재단 홈페이지 새창열기"><h1 class="hiddentag">한국연국재단 홈페이지</h1></a>
+                        </div>
+                        <div class="mo_bars">
+                            <button type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mo_nav">
+                <div class="mo_close">
+                    <button type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mo_nav_con">
+                    <ul class="mo_navbox">
+                        <li><a href="#">NRF WEBZINE</a></li>
+                        <li><a href="#">2023 대한민국 과학기술대전</a></li>
+                        <li><a href="#">2023 산학협력 EXPO</a></li>
+                        <li><a href="#">제7회 세계인문학포럼</a></li>
+                        <li><a href="#">NRF 캠페인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <main id="new_sc" class="sc_wrap">
+                <!--SECTION 01-->
+                <section id="sec_01" class="sc_area">
+                    <div class="sec_bg"></div>
+                    <div class="sec_cont">
+                        <div class="sec_tit">
+                            <h3 class="fadeUpDelay">
+                                <span>세상을 바꿀 대한민국 과학기술</span><br />
+                                2023 대한민국 과학기술대전
+                            </h3>
+                            <p class="fadeUpDelay">Korea Science Technology & Fair 2023</p>
+                        </div>
+                        <div class="scroll_down">
+                            <div class="scroll_down_icon">
+                                <p>SCROLL DOWN</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--SECTION 01 END-->
+                <!--SECTION 02-->
+                <section id="sec_02" class="sc_area">
+                    <div class="sec_cont">
+                        <ul class="sec_list">
+                            <li class="menu_item menu_item_01_1">
+                                <a href="#" title="이슈체크인 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay">
+                                        <span class="">이슈 체크인</span>
+                                        <p>
+                                            세상을 바꿀<br />
+                                            대한민국 과학기술을<br />
+                                            만나다
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_item menu_item_01_2">
+                                <a href="#" title="이슈돋보기 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay">
+                                        <span>이슈 돋보기</span>
+                                        <p>
+                                            빛나는 과학기술<br />
+                                            연구개발 성과 한곳에
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_item menu_item_01_3">
+                                <a href="#" title="현장포커스1 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay">
+                                        <span>현장 포커스 ①</span>
+                                        <p>
+                                            대한민국 과학기술,<br />
+                                            국민에게 더 가까이
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_item menu_item_01_4">
+                                <a href="#" title="현장포커스2 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay">
+                                        <span>현장 포커스 ②</span>
+                                        <p>
+                                            미래를 여는<br />
+                                            대한민국 첨단 과학기술
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!--SECTION 02 END-->
+                <!--SECTION 03-->
+                <section id="sec_03" class="sc_area">
+                    <div class="sec_bg"></div>
+                    <div class="sec_cont">
+                        <div class="sec_tit">
+                            <h3 class="fadeUpDelay2">
+                                <span>지역과 함께하는 산학협력, 담대한 혁신의 시작</span><br />
+                                2023 산학협력 EXPO
+                            </h3>
+                        </div>
+                        <div class="scroll_down">
+                            <div class="scroll_down_icon">
+                                <p>SCROLL DOWN</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--SECTION 03 END-->
+                <!--SECTION 04-->
+                <section id="sec_04" class="sc_area">
+                    <div class="sec_cont">
+                        <ul class="sec_list">
+                            <li class="menu_item menu_item_02_1">
+                                <a href="#" title="이슈체크인 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay2">
+                                        <span class="">이슈 체크인</span>
+                                        <p>
+                                            학계와 산업계가 함께하는<br />
+                                            '산학협력 EXPO'
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_item menu_item_02_2">
+                                <a href="#" title="이슈돋보기 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay2">
+                                        <span>이슈 돋보기</span>
+                                        <p>
+                                            성과전시로<br />
+                                            한발 더 가까워지는 산학협력
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu_item menu_item_02_3">
+                                <a href="#" title="현장포커스 자세히보기">
+                                    <div class="sec_02_txt fadeRtDelay2">
+                                        <span>현장 포커스</span>
+                                        <p>
+                                            글로벌 산학협력과<br />
+                                            미래인재 양성
+                                        </p>
+                                        <div class="more_btn"><span>자세히보기</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!--SECTION 04 END-->
+                <!--SECTION 05-->
+                <section id="sec_05" class="sc_area">
+                    <div class="sec_cont">
+                        <div class="sec_05_cont cam_bg">
+                            <div class="sec05_tit cam_tit fadeUpDelay3">건전한 학술생태계 구축 캠페인</div>
+                            <div class="cam_cont fadeUpDelay3">
+                                <div class="cam_box">
+                                    <a href="#" title="연구업적 평가의 문제점과 나아갈 방향 바로가기">
+                                        <div class="cam_title">
+                                            <span>2023.11</span>
+                                            <p>
+                                                연구업적 평가의<br />
+                                                문제점과<br />
+                                                나아갈 방향
+                                            </p>
+                                        </div>
+                                        <div class="cam_txt">
+                                            <p>연구란 무엇인가? 연구업적물을 어떻게 평가하고 있는가? 바람직한 방향으로 진행되고 있는가? 그렇지 않다면 평가는 어떻게 진행되어야 하는가? 본 고에서는 이에 대해 살펴보고자 한다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul class="cam_list">
+                                    <li class="cam_item">
+                                        <a href="#" title="건전한 학술생태계 구축을 위한 연구결과물의 책임있는 출판 바로가기">
+                                            <div class="txt_box">
+                                                <span>2023.04</span>
+                                                <p>
+                                                    건전한 학술생태계 구축을 위한<br />
+                                                    연구결과물의 책임있는 출판
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cam_item">
+                                        <a href="#" title="오픈액세스와 부실학술 활동 바로가기">
+                                            <div class="txt_box">
+                                                <span>2023.05</span>
+                                                <p>오픈액세스와 부실학술 활동</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cam_item">
+                                        <a href="#" title="부실학술출판 예방과 건전학술활동지원시스템(SAFE)">
+                                            <div class="txt_box">
+                                                <span>2023.06</span>
+                                                <p>
+                                                    부실학술출판 예방과<br />
+                                                    건전학술활동지원시스템 (SAFE)
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cam_item">
+                                        <a href="#" title="건전한 학술문화조성을 위한 연구업적평가 개선 방향에 대한 소고">
+                                            <div class="txt_box">
+                                                <span>2023.07</span>
+                                                <p>
+                                                    건전한 학술문화조성을 위한<br />
+                                                    연구업적평가 개선 방향에 대한 소고
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cam_item">
+                                        <a href="#" title="최고의 연구를 위한 투명성과 신뢰성 보장">
+                                            <div class="txt_box">
+                                                <span>2023.08</span>
+                                                <p>
+                                                    최고의 연구를 위한<br />
+                                                    투명성과 신뢰성 보장
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cam_item">
+                                        <a href="#" title="약탈적 학술지 이용 예방을 위해 국제한림원 연합회(IAP)가 연구계에 권고한 사항은?">
+                                            <div class="txt_box">
+                                                <span>2023.09</span>
+                                                <p>
+                                                    약탈적 학술지 이용 예방을 위해<br />
+                                                    국제한림원 연합회(IAP)가 연구계에 권고한 사항은?
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sec_05_cont forum_bg">
+                            <div class="sec05_tit forum_tit fadeUpDelay3">사업 안내</div>
+                            <ul class="forum_list fadeUpDelay3">
+                                <li class="forum_item">
+                                    <a href="#">
+                                        <div class="forum_num forum_bg_01"><span>01</span></div>
+                                        <div class="forum_contbox">
+                                            <div class="forum_subject">
+                                                <p>
+                                                    선도연구센터<br />
+                                                    지원사업
+                                                </p>
+                                                <span class="forum_arrow"></span>
+                                            </div>
+                                            <ul class="tag_list">
+                                                <li>#기초연구</li>
+                                                <li>#핵심연구분야</li>
+                                                <li>#혁신연구센터</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="forum_item">
+                                    <a href="#">
+                                        <div class="forum_num forum_bg_02"><span>02</span></div>
+                                        <div class="forum_contbox">
+                                            <div class="forum_subject">
+                                                <p>
+                                                    박사과정생<br />
+                                                    연구장려금지원사업
+                                                </p>
+                                                <span class="forum_arrow"></span>
+                                            </div>
+                                            <ul class="tag_list">
+                                                <li>#인문사회 연구지원</li>
+                                                <li>#박사과정생 지원</li>
+                                                <li>#학문후속세대</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--SECTION 05 END-->
+            </main>
+            <footer id="new_ft" class="ft_wrap">
+                <div class="ft_area">
+                    <div class="ft_con">
+                        <div class="ft_logo"></div>
+                        <div class="ft_cont">
+                            <div class="ft_txt">
+                                <ul>
+                                    <li>
+                                        <span>대전청사 (34113) 대전광역시 유성구 가정로 201</span>
+                                        <span>TEL 042-869-6114</span>
+                                        <span>FAX 042-869-6777</span>
+                                    </li>
+                                    <li>
+                                        <span>서울청사 (06792) 서울특별시 서초구 헌릉로 25</span>
+                                        <span>TEL 02-3460-5500</span>
+                                    </li>
+                                    <li>간행물 심의번호 20141223-2-17</li>
+                                </ul>
+                                <p>
+                                    한국연구재단 웹진 사이트의 콘텐츠는 저작권의 보호를 받는 바, 무단전재, 복사, 배포를 금합니다.<br />
+                                    Copyright © 2023 NRF all rights reserved.
+                                </p>
+                            </div>
+                            <div class="ft_policy">
+                                <div class="ft_prom">
+                                    <ul>
+                                        <li class="prom_tit">홍보실</li>
+                                        <li>TEL 042-869-6852 팩스 042-861-8831</li>
+                                        <li>웹진에 소개하고 싶은 내용이나 의견을 기다립니다.</li>
+                                    </ul>
+                                </div>
+                                <ul class="ft_policy_list">
+                                    <li><a href="#" title="개인정보처리방침 새창열기">개인정보처리방침</a></li>
+                                    <li><a href="#" title="자동이메일수집거부 새창열기">자동이메일수집거부</a></li>
+                                    <li><a href="#" title="수신거부 신청 새창열기">수신거부 신청</a></li>
+                                    <li><a href="#" title="구독신청 새창열기">구독신청</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <ul class="quick_navbox">
+        <li class="quick_btn">
+            <a href="#" title="퀵버튼">퀵버튼</a>
+            <ul class="quick_deps">
+                <li><a href="https://www.nrf.re.kr/cms/board/library/list?menu_no=419" title="보고서 도서관" target="_blank">보고서<br> 도서관</a></li>
+                <li><a href="/nrf_2311/list.html" title="콘텐츠 모아보기" target="_blank">콘텐츠<br> 모아보기</a></li>
+                <li><a href="https://www.nrf.re.kr/cms/board/thumb_rect/list?menu_no=367" title="e-알리미 바로가기" target="_blank">e-알리미<br> 바로가기</a></li>
+                <li><a href="https://webzine.nrf.re.kr/webzine/subscribe.html" title="구독신청" target="_blank">구독<br>신청</a></li>
+            </ul>
+        </li>
+        <li class="top_btn"><a href="#" title="탑버튼">탑버튼</a></li>
+    </ul>
+    <script src="js/common.js"></script>
+    <script src="js/anime.js"></script>
+    <script>
+        function A_CLICK() {
+            document.querySelectorAll('a[href="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                });
+            });
+        }
+        A_CLICK();
+
+        function MONTH_CLICK() {
+            let toggleclick = 0;
+            $('.month_btn').click(function () {
+                if (toggleclick == 0) {
+                    $('.month_list').stop().slideDown(300);
+                    $('.month_btn').addClass('active');
+                    toggleclick = 1;
+                } else if (toggleclick == 1) {
+                    $('.month_list').stop().slideUp(300);
+                    $('.month_btn').removeClass('active');
+                    toggleclick = 0;
+                }
+            });
+        }
+        MONTH_CLICK();
+    </script>
+</html>
