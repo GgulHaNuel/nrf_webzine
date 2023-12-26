@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+.hiddentag {
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
+/* INPUT */
+/* INPUT END */
+
+/* FILE */
+/* FILE EMD */
+
+/* BUTTON */
+/* BUTTON END */
+
+/* SELECT */
+/* SELECT END */
+
+/* CHECKBOX */
+/* CHECKBOX END */
+
+/* RADIOBOX */
+/* RADIOBOX END */
+
+/* TEXTAREA */
+/* TEXTAREA END */
+
+/* PAGING BOX */
+.paging_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.paging_con .paging_box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paging_con .paging_box .paging_arrows {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.paging_con .paging_box .paging_arrows > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.paging_con .paging_box .paging_arrows_lt > a {
+    background-image: url(../img/paging_arrows_prev.png);
+}
+
+.paging_con .paging_box .paging_arrows_lt2 > a {
+    background-image: url(../img/paging_arrows_prev2.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt > a {
+    background-image: url(../img/paging_arrows_next.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt2 > a {
+    background-image: url(../img/paging_arrows_next2.png);
+}
+
+.paging_con .paging_box .paging_arrows > a:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.paging_con .paging_box .paging_arrows_lt > a:hover {
+    background-image: url(../img/paging_arrows_prev_on.png);
+}
+
+.paging_con .paging_box .paging_arrows_lt2 > a:hover {
+    background-image: url(../img/paging_arrows_prev2_on.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt > a:hover {
+    background-image: url(../img/paging_arrows_next_on.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt2 > a:hover {
+    background-image: url(../img/paging_arrows_next2_on.png);
+}
+
+.paging_con .paging_box .paging_number {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.paging_con .paging_box .paging_number > li {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.paging_con .paging_box .paging_number > li > a {
+    width: 100%;
+    height: 100%;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #848484;
+}
+
+.paging_con .paging_box .paging_number > li > a:hover,
+.paging_con .paging_box .paging_number > li.active > a {
+    text-decoration: underline;
+    color: #000;
+}
+
+@media all and (max-width: 481px) {
+    .paging_con {
+        margin-top: 30px;
+    }
+
+    .paging_con .paging_box {
+        gap: 5px;
+    }
+
+    .paging_con .paging_box .paging_number {
+        margin: 0 5px;
+    }
+
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .paging_con .paging_box .paging_arrows > a {
+        -webkit-background-size: 20px 20px;
+        background-size: 20px;
+    }
+
+    .paging_con .paging_box .paging_number > li > a {
+        font-size: 0.8125rem;
+    }
+}
+
+@media all and (max-width: 376px) {
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 28px;
+        height: 28px;
+    }
+
+    .paging_con .paging_box .paging_arrows > a {
+        -webkit-background-size: 17px 17px;
+        background-size: 17px;
+    }
+
+    .paging_con .paging_box .paging_number > li {
+        margin: 0 2.5px;
+    }
+
+    .paging_con .paging_box .paging_number > li > a {
+        font-size: 0.6875rem;
+    }
+}
+
+@media all and (max-width: 321px) {
+    .paging_con {
+        margin-top: 29px;
+    }
+
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* PAGING BOX END */
